@@ -17,23 +17,22 @@ The dataset includes information from 100k medical appointments in Brazil. A num
 The data was downloaded from [Kaggle](https://www.kaggle.com/joniarroba/noshowappointments)
 
 ### Two Stages of the Project:
-1. **Explore and clean the data**: `investigate-a-dataset-project.ipynb`
+#### 1. **Explore and clean the data**: `investigate-a-dataset-project.ipynb`
 
 No machine learning or modelling in this step. The data was cleaned and efforts were made to make _elementary sense_ of the variables.
  _(Note: This notebook was created **before** I learnt any ML concepts. While the code and commentary in this notebook is extremely rudimentary and borderline comical, 
 it was useful for creating a **cleaned version** of the data which was used for building ML models.)_
 
 **Input**: `no_show_data_2.csv`
-**output**: `no_show_data_clean.csv`
+**Output**: `no_show_data_clean.csv`
 
-2. **Building different ML models**: `No_Show_Parameter_Testing_Model_Selection.ipynb`
+#### 2. **Building different ML models**: `No_Show_Parameter_Testing_Model_Selection.ipynb`
 
 Different machine learning models were created in this step to better _predict whether patients will show up to their doctor appointments after booking them._
 
 **Input**: `no_show_data_modelling.csv`
-**Output**:``
 
-#### Conclusion:
+### Conclusion:
 After tuning the _Hyper Parameters_ of multiple machine learning algorithms, **AdaBoost Classifier** (with learning rate of 1.5 and n_estimators of 50) was found to provide the highest accuracy of **79.8%**
 
 ### Files Included in the Repo
@@ -41,7 +40,6 @@ After tuning the _Hyper Parameters_ of multiple machine learning algorithms, **A
 * `Patient_No_Show_Cross_Val_Ceck.ipynb` - Notebook containing cross validation checks to decide the best performing ML model. _No hyper testing was performed in this_
 * `Patient_No_Show_Decision_Tree.ipynb` - Notebook containing building a _Decision Tree_ to classify no-show patients
 * `investigate-a-dataset-project.ipynb` - The very first notebook which was used to explore and clean data. It output the cleaned dataset which was used for creating ML models
-* `` - The final ML model
 * `no_show_data_2.csv` - Original csv file downloaded from the link. This was used to investigate the dataset and cleaning exercises
 * `no_show_data_clean.csv` - Cleaned dataset - used as an input for modelling notebooks
 * `no_show_data_modelling.csv` - Dataset containing dummy codes for categorical variables. The final data file for Modelling
